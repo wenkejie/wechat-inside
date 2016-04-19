@@ -1,0 +1,62 @@
+//
+// 弹窗
+// --------------------------------------------------
+// 常量
+@min-pd:             0.188rem;//小间距~3px
+
+.wui-dialog{
+  position: fixed;z-index: 900;top: 0;right: 0;bottom: 0;
+  width: 85%;box-shadow: -3px 0 4px rgba(0,0,0,.22);padding-bottom: 4.063rem;
+  background: #f6f6f6;
+  > .dialog-close{
+  	position: absolute;right: 0.438rem;top: 0.625rem;
+  	font-size: 1.25rem;
+  	color: #c9c8c8;
+  }
+
+  > .wui-dialog-footer{
+	position: absolute;left: 0;bottom: 0;right: 0;z-index: 110;
+	height: 4.063rem;
+	border-top: 1px solid #c7c7c7;
+  	> .wui-btn{
+  		width: 90%;margin: 0 auto;margin-top: 0.625rem;
+  	}
+  }
+}
+
+.wui-shadow{
+  position: absolute;left: 0;right: 0;top: 0;bottom: 0;z-index: 99;
+  background: rgba(0,0,0, 0.15);
+}
+
+
+
+// alert窗口
+
+.wui-alert{
+  position: fixed;left: 50%;top: 30%;bottom: auto;z-index: 109;
+  width: 200px;margin-left: -100px;padding-top: 32px;padding-bottom: 45px;
+  border: 1px solid #ccc;border-radius: 5px;background: #fff;
+  color: #666;font-size: 12px;
+  > .dialog-close{
+    position: absolute;right: 0.438rem;top: 0.625rem;
+    color: #c9c8c8;font-size: 14px;
+  }
+
+  > .wui-alert-footer{
+  position: absolute;left: 0;bottom: 0;right: 0;z-index: 110;
+  display:flex;
+  height: 45px;
+  text-align: right;
+    > .wui-btn{
+      display: inline-block;lign-items:center;
+      height: 28px;line-height: 28px;width: auto;
+      vertical-align: middle;
+      font-size: 12px;
+    }
+  }
+}
+
+.wui-shadow-alert{
+  background: rgba(0,0,0, 0.5);
+}

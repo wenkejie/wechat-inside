@@ -1,0 +1,336 @@
+<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+	<title>整箱+拼箱</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection"content="telephone=no, email=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- 适应移动端end -->
+	<!-- 样式引入 -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1415243736_8672016.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- 样式 end -->
+	<!-- 插件及js应用 -->
+	<!-- zepto -->
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/j-serve.js"></script>
+	<!-- js end -->
+</head>
+<body>
+	<div class="wui-wrap wui-wrap-auto">
+		<div class="wui-header">
+			<div class="wui-header-cnt">
+				<div class="user-info-area user-info-wechat">
+					<div class="user-info-portrait">
+						<img src="img/user.png">
+					</div>
+					<div class="user-info-cnt">
+						<div class="user-info-title">
+							<i class="icon-male"></i><span>某某</span>
+						</div>
+						<div class="user-info-line">
+							<span>奥林科技有限公司</span>
+						</div>
+						<div class="user-info-line">
+							<label>昵称：</label><span>S-vosl</span>
+						</div>
+						<div class="user-info-line">
+							<label>手机：</label><span>15868854324</span><span class="dividing-line"></span><a class="user-qq-link" href="javascript:"><i class="icon-qq"></i>在线QQ</a>
+						</div>
+						<div class="user-info-line">
+							<label>客户类型：</label><span>直客</span>
+						</div>
+						<div class="user-info-line">
+							<label>国家地区：</label><span>中国浙江宁波</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wui-filter">
+				<div class="wui-filter-title">
+					<strong>搜索条件</strong>
+				</div>
+				<div class="wui-filter-list">
+					<div class="filter-list-top">
+						<span>NINGBO</span><i class="icon-arrow-right"></i><span>DUBAI</span>
+					</div>
+					<div class="filter-list-line">
+						<div class="filter-list-cell">
+							<label>起运港：</label><span>NINGBO,BANDAR,BANDAR,BANDAR,BANDAR,BANDAR,BANDAR,BANDAR,BANDAR</span>
+						</div>
+						<div class="filter-list-cell last">
+							直达
+						</div>
+					</div>
+					<div class="filter-list-line">
+						<div class="filter-list-cell">
+							<label>目的港：</label><span>NINGBO,BANDAR</span>
+						</div>
+					</div>
+					<div class="filter-list-line">
+						<div class="filter-list-cell">
+							<label>船公司：</label><span>APL,APL</span>
+						</div>
+					</div>
+					<div class="filter-list-line">
+						<div class="filter-list-cell">
+							<label>截关：</label><span>周一</span>
+						</div>
+						<div class="filter-list-cell">
+							<label>离港：</label><span>周三</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wui-body">
+			<div class="wui-list">
+				<div class="wui-list-grid">
+					<div class="wui-grid-header">
+						<div class="wui-grid-header-left">
+							<h3><span>ANL</span></h3>
+						</div>
+						<div class="wui-grid-header-right">
+							<p class="data"><label for="">航程：</label><span>30天</span> | <span>3截5开</span></p>
+							
+						</div>
+					</div>
+					<div class="wui-grid-body">
+						<label class="wui-grid-label">
+							<p>报价：</p>
+							<p>成本：</p>
+						</label>
+						<div class="wui-grid-table">
+							<div class="wui-grid-cell">
+								<span>20'GP<i class="icon-nory"></i></span>
+								<p class="quoted-price">382</p>
+								<p class="costs-price">293</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>40'GP</span>
+								<p class="quoted-price">3221</p>
+								<p class="costs-price">3323</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>60'GP</span>
+								<p class="quoted-price">1234</p>
+								<p class="costs-price">2122</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">停航</p>
+								<p class="costs-price"></p>
+							</div>
+						</div>
+						<i class="icon-to-right wui-grid-to-detail"></i>
+					</div>
+				</div>
+				<div class="wui-list-grid">
+					<div class="wui-grid-header">
+						<div class="wui-grid-header-left">
+							<h3><span>ANL</span></h3>
+						</div>
+						<div class="wui-grid-header-right">
+							<p class="data"><label for="">航程：</label><span>30天</span> | <span>3截5开</span></p>
+							<p class="other-info"><label for="">横港码头：</label><span>宁波</span></p>
+						</div>
+					</div>
+					<div class="wui-grid-body">
+						<label class="wui-grid-label">
+							<p>报价：</p>
+							<p>成本：</p>
+						</label>
+						<div class="wui-grid-table">
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">382</p>
+								<p class="costs-price">293</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">3221</p>
+								<p class="costs-price">3323</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">1234</p>
+								<p class="costs-price">2122</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">-</p>
+								<p class="costs-price">-</p>
+							</div>
+						</div>
+						<i class="icon-to-right wui-grid-to-detail"></i>
+					</div>
+				</div>
+				<div class="wui-list-grid">
+					<div class="wui-grid-header">
+						<div class="wui-grid-header-left">
+							<h3><span>ANL</span></h3>
+						</div>
+						<div class="wui-grid-header-right">
+							<p class="data"><label for="">航程：</label><span>30天</span> | <span>3截5开</span></p>
+							<p class="other-info"><label for="">横港码头：</label><span>宁波</span></p>
+						</div>
+					</div>
+					<div class="wui-grid-body">
+						<label class="wui-grid-label">
+							<p>报价：</p>
+							<p>成本：</p>
+						</label>
+						<div class="wui-grid-table">
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">382</p>
+								<p class="costs-price">293</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">3221</p>
+								<p class="costs-price">3323</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">1234</p>
+								<p class="costs-price">2122</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">3221</p>
+								<p class="costs-price">-</p>
+							</div>
+						</div>
+						<i class="icon-to-right wui-grid-to-detail"></i>
+					</div>
+				</div>
+				<div class="wui-list-grid">
+					<div class="wui-grid-header">
+						<div class="wui-grid-header-left">
+							<h3><span>ANL</span></h3>
+						</div>
+						<div class="wui-grid-header-right">
+							<p class="data"><label for="">航程：</label><span>30天</span> | <span>3截5开</span></p>
+							<p class="other-info"><label for="">横港码头：</label><span>宁波</span></p>
+						</div>
+					</div>
+					<div class="wui-grid-body">
+						<label class="wui-grid-label">
+							<p>报价：</p>
+							<p>成本：</p>
+						</label>
+						<div class="wui-grid-table">
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">382</p>
+								<p class="costs-price">293</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">3221</p>
+								<p class="costs-price">3323</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">1234</p>
+								<p class="costs-price">2122</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">3221</p>
+								<p class="costs-price">-</p>
+							</div>
+						</div>
+						<i class="icon-to-right wui-grid-to-detail"></i>
+					</div>
+				</div>
+				<div class="wui-list-grid">
+					<div class="wui-grid-header">
+						<div class="wui-grid-header-left">
+							<h3><span>ANL</span></h3>
+						</div>
+						<div class="wui-grid-header-right">
+							<p class="data"><label for="">航程：</label><span>30天</span> | <span>3截5开</span></p>
+							<p class="other-info"><label for="">横港码头：</label><span>宁波</span></p>
+						</div>
+					</div>
+					<div class="wui-grid-body">
+						<label class="wui-grid-label">
+							<p>报价：</p>
+							<p>成本：</p>
+						</label>
+						<div class="wui-grid-table">
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">382</p>
+								<p class="costs-price">293</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">3221</p>
+								<p class="costs-price">3323</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">1234</p>
+								<p class="costs-price">2122</p>
+							</div>
+							<div class="wui-grid-cell">
+								<span>20'GP</span>
+								<p class="quoted-price">3221</p>
+								<p class="costs-price">-</p>
+							</div>
+						</div>
+						<i class="icon-to-right wui-grid-to-detail"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wui-footer">
+			<a href="javascript:" class="cui-loading-link">加载更多</a>
+		</div>
+		
+		<div class="wui-shadow wui-shadow-alert none"></div>
+		<div class="wui-alert none">
+			<i class="icon-close dialog-close"></i>
+			<div class="wui-alert-content">
+				你可以在微信公众号首页，通过微信发送功能向我公司小二咨询，<br/>
+				点击"确认"后将返回公众号首页。
+			</div>
+			<div class="wui-alert-footer">
+				<button class="wui-btn wui-btn-primary">确定</button>
+				<button class="wui-btn">取消</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

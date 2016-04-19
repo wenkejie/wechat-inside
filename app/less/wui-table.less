@@ -1,0 +1,67 @@
+//
+// label
+// --------------------------------------------------
+// 常量
+
+.wui-table-area{}
+
+.wui-table-title{
+	padding:0.313rem;margin-top: 0.313rem;
+	font-weight: bold;color: #666;
+}
+
+
+.wui-table{
+	width: 100%;
+	td,th{
+		text-align: left;
+	}
+}
+
+
+// 运价的一些其他信息表
+.wui-table-affix{
+	border: 1px solid #ccc;
+	tr{
+		border-top: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;
+		&:nth-child(2n){
+			background: #fcfcfc;
+		}
+		&:first-child{
+			border-top-width: 0;
+		}
+		&:last-child{
+			border-bottom-width: 0;	
+		}
+	}
+	td{
+		padding: 0.625rem 0;
+		text-align: left;
+	}
+
+}
+
+
+// 附加费表格
+
+.wui-table-surcharge{
+	background: #fff;
+	td,th{
+		height: 29px;line-height: 29px;
+		border: 1px solid #ccc;
+		text-align: center;
+	}
+	th{
+		background: #f1f1f1;
+		color: #333;
+	}
+	td{
+		color: #333;
+	}
+	.usd{
+		color: #f9aa0b;
+	}
+	.cny{
+		color: #999;
+	}
+}

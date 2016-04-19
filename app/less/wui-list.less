@@ -1,0 +1,215 @@
+
+
+.wui-list{
+
+}
+
+
+.wui-list-title{
+	padding: 0.625rem 0;
+	padding-left: .625rem;
+	font-size: 14px;
+	>.icon-arrow-right{
+		position: relative;
+		top: -2px;
+		color: #ccc;font-size: 0.6rem;
+	}
+	
+}
+
+.wui-list-title-icon{
+	position: relative;
+	top: -2px;
+	color: #ccc;font-size: 0.6rem;
+}
+
+
+.wui-list-grid{
+	position: relative;
+	// height: 100%;
+	border: 1px solid #ddd;background: #fafafa;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	+ .wui-list-grid{
+		margin: 0.313rem 0;
+	}
+	&:first-child{
+		margin-top: 10px;
+	}
+}
+
+.wui-grid-header{
+	padding: 0.313rem;
+	border-bottom: 1px solid #eee;background: #fff;
+	font-size: 0;
+	.transit-mark{
+		&:extend(.oneline all);
+		padding:1px 2px;border-radius: 1px;margin-left: 5px;
+		background: #09bfe2;font-size: 0.5rem;color: #fff;font-style: normal;
+		vertical-align: middle;
+	}
+	
+	label{
+		color: #999;
+	}
+}
+
+.wui-grid-header-left{
+	font-size: 14px;
+	> h3{
+		display: inline-block;
+		padding: 0 0.313rem;
+		vertical-align: middle;
+		font-size: 14px;font-weight: bold;
+		// span{
+		// 	display: inline-block;vertical-align: middle;
+		// }
+	}
+	.icon-arrow-right{
+		margin: 0 5px;
+		color: #ccc;font-size: 0.6rem;
+		vertical-align: middle;
+	}
+	span{
+		vertical-align: middle;
+	}
+}
+.wui-grid-header-right{
+	font-size: 14px;
+	> p{
+		display: inline-block;
+		padding: 0 0.313rem;
+		vertical-align: middle;
+		font-size: 12px;color: #333;
+	}
+}
+
+.wui-grid-body{
+	position: relative;
+	
+	padding: 0.625rem 1.25rem 0.625rem 2.5rem;
+}
+
+.wui-grid-table{
+	display: table;table-layout: fixed;
+	width: 100%;
+}
+
+.wui-grid-label{
+	position: absolute;
+	left: 0;bottom: 0.625rem;
+	width: 2.5rem;
+	text-align: right;font-size: 12px;color: #bbb;
+}
+
+
+.wui-grid-to-detail{
+	position: absolute;right: 0.313rem;top: 10px;
+	width: 0.938rem;height: 14px;
+	vertical-align: middle;
+	color: #ccc;font-size: .8rem;
+}
+
+
+.wui-grid-cell{
+	display: table-cell;
+	>span{
+		position: relative;
+		display: block;
+		padding-bottom: 0.188rem;
+  		color: #999;
+  		font-size: 12px;
+	}
+	// 冷带干图标添加
+	.icon-nory{
+		position: absolute;
+	 	color: #aaa;
+	 	left: -15px;top: -1px;
+	 	font-size: 18px;
+	}
+	.quoted-price{
+		color: #9e5010;font-size: 16px;
+	}
+	.costs-price{
+		font-size: 12px;color: #ea832e;
+	}
+}
+
+
+
+
+// 拼箱细节调整
+.wui-list-lcl{
+	.wui-grid-body{
+		padding-left: 3.125rem;
+	}
+	span,.costs-price{
+		font-size: 14px;
+	}
+	.quoted-price{
+		font-size: 18px;
+	}
+	.wui-grid-label{
+		bottom: 0.688rem;
+		width: 3.125rem;padding-right: 3px;	
+	}
+	.quoted{
+		padding-bottom: 0.313rem;
+	}
+}
+
+
+
+// =======================
+
+.wui-list-affix{
+	display: table;table-layout: fixed;
+	width: 100%;margin-top: 0.313rem;
+	border: 1px solid #ccc;
+	> li{
+		display: table-row;
+		> label,> span{
+			display: table-cell;
+			font-size: 0.875rem;
+			padding: .5rem .2rem;
+			border-bottom: 1px solid #e5e5e5;
+		}
+		> label{
+			width: 6rem;
+			.word-break;
+			text-align: right;color: #999;
+		}
+		> span{
+			&:extend(.word-break all);
+			text-align: left;font-size: 0.875rem;
+		}
+
+
+		&:nth-child(2n){
+			background: #fcfcfc;
+		}
+		&:last-child{
+			> label,> span{
+			border-bottom-width: 0;
+			}
+		}
+	}
+}
+
+
+
+// 搜索详情价格部分的自适应
+
+@media (max-width: 320px) {
+
+}
+@media (min-width: 640px) { 
+	.wui-list{
+		font-size: 18px;
+	}
+} 
+@media (min-width:960px) {
+	
+} 
+@media (min-width:1100px) { 
+	
+}

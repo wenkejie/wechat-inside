@@ -1,0 +1,91 @@
+//
+// 过滤结构
+// --------------------------------------------------
+
+// 常量
+
+.wui-filter{
+  &:extend(.clearfix all);
+  >.filter-cell{
+    float: left;
+    height: @header-height;line-height: @header-height - 0.063rem;padding: 0 0.75rem;
+    border-right: 1px solid #eee;
+    font-weight: bold;color: #666;font-size: .8rem;
+    > i{
+    	font-size: .8rem;color: #aaa;
+        vertical-align: top;
+    }
+    &:first-child{
+    	color: #ff8900;
+    	i{
+    		color: #ff8900;
+            font-size: 10px;
+    	}
+    }
+  }
+}
+
+
+.wui-filter-title{
+    padding: 10px;
+    background-color: #e9e9e9;
+    color: #666;font-weight: bold;font-size: 1rem;
+}
+
+.wui-filter-list{
+    padding-left: 10px;
+    background: #fff;
+    font-size: 0.875rem;color: #666;
+    label{
+        color: #999;
+    }
+}
+
+.filter-list-line{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    &:last-child{
+        border-bottom: none;
+    }
+}
+
+.filter-list-top{
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #333;font-weight: bold;
+    .icon-arrow-right{
+        margin: 0 5px;
+        color: #ccc;font-size: 0.6rem;
+        vertical-align: middle;
+    }
+    span{
+        vertical-align: middle;
+    }
+}
+
+.filter-list-cell{
+    display: table-cell;
+    padding: 10px 10px 10px 60px;
+    label{
+        display: inline-block;
+        width: 60px;margin-left: -60px;
+        vertical-align: top;
+        text-align: right;
+    }
+    span{
+        &:extend(.word-break all);
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+    }
+    &.last{
+        width: 50px;padding: 0;
+        text-align: center;
+    }
+    & + .filter-list-cell{
+        border-left: 2px solid #eee;
+    }
+}
+
